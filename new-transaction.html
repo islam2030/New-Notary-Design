@@ -69,7 +69,7 @@
         <!-- start content here -->
         <div class="body_content padding_section">
             <div class="container">
-                <div class="row">
+                <div class="row mb-3">
                     <div class="col-lg-4 col-md-12 pl-0">
                         <div class="small-boxs text-center">
                             <div class="btn_back text-center d-block btn_back_postion">
@@ -103,7 +103,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row mb-3">
                     <div class="col-lg-4 col-md-12">
                         <div class="form_box">
                             <div class="main_circle"></div>
@@ -186,7 +186,7 @@
                     </div>
                     <div class="col-lg-8 col-md-12 pr-0">
                         <div class="collapse_transaction">
-                            <ul uk-accordion>
+                            <ul uk-accordion class="mb-3">
                                 <li class="uk-open text-right">
                                     <a class="uk-accordion-title" href="#"> بيانات الوكلاء </a>
                                     <span class="numberic">2</span>
@@ -194,7 +194,6 @@
                                         <table class="table">
                                             <thead class="thead-dark">
                                                 <tr>
-
                                                     <th></th>
                                                     <th>هوية المواطن</th>
                                                     <th> رقم هوية المواطن </th>
@@ -207,11 +206,15 @@
                                             </thead>
                                             <tbody>
                                                 <tr class="rows">
-                                                    <!-- <td class="actions">
-                                                        <i class="material-icons">edit</i>
-                                                        <i class="material-icons">delete_forever</i>
-                                                    </td> -->
-                                                    <td><span class="image_user mr-2"><img src="assets/img/person-placeholder.png" title="" alt=""></span></td>
+                                                    <td>
+                                                        <span class="image_user mr-2">
+                                                            <img src="assets/img/person-placeholder.png" title="" alt="">
+                                                        </span>
+                                                        <div class="actions">
+                                                            <i class="material-icons">edit</i>
+                                                            <i class="material-icons">delete_forever</i>
+                                                        </div>
+                                                    </td>
                                                     <td>
                                                         <span> جواز السفر </span>
                                                     </td>
@@ -223,11 +226,15 @@
                                                     <td>مدينة الموصل - الموصل</td>
                                                 </tr>
                                                 <tr class="rows bg-rows">
-                                                    <!-- <td class="actions">
-                                                        <i class="material-icons">edit</i>
-                                                        <i class="material-icons">delete_forever</i>
-                                                    </td> -->
-                                                    <td><span class="image_user mr-2"><img src="assets/img/person-placeholder.png" title="" alt=""></span></td>
+                                                    <td>
+                                                        <span class="image_user mr-2">
+                                                            <img src="assets/img/person-placeholder.png" title="" alt="">
+                                                        </span>
+                                                        <div class="actions">
+                                                            <i class="material-icons">edit</i>
+                                                            <i class="material-icons">delete_forever</i>
+                                                        </div>
+                                                    </td>
                                                     <td>
                                                         <span><img src="" title="" alt=""></span>
                                                         <span> جواز السفر </span>
@@ -266,11 +273,16 @@
                                             </thead>
                                             <tbody>
                                                 <tr class="rows">
-                                                    <!-- <td class="actions">
+                                                    <td>
+                                                        <span class="image_user mr-2">
+                                                            <img src="assets/img/person-placeholder.png" title="" alt="">
+                                                            
+                                                        </span>
+                                                        <div class="actions">
                                                             <i class="material-icons">edit</i>
                                                             <i class="material-icons">delete_forever</i>
-                                                        </td> -->
-                                                    <td><span class="image_user mr-2"><img src="assets/img/person-placeholder.png" title="" alt=""></span></td>
+                                                        </div>
+                                                    </td>
                                                     <td>
                                                         <span> جواز السفر </span>
                                                     </td>
@@ -286,7 +298,15 @@
                                                             <i class="material-icons">edit</i>
                                                             <i class="material-icons">delete_forever</i>
                                                         </td> -->
-                                                    <td><span class="image_user mr-2"><img src="assets/img/person-placeholder.png" title="" alt=""></span></td>
+                                                    <td>
+                                                        <span class="image_user mr-2">
+                                                            <img src="assets/img/person-placeholder.png" title="" alt="">
+                                                        </span>
+                                                        <div class="actions">
+                                                            <i class="material-icons">edit</i>
+                                                            <i class="material-icons">delete_forever</i>
+                                                        </div>
+                                                    </td>
                                                     <td>
                                                         <span><img src="" title="" alt=""></span>
                                                         <span> جواز السفر </span>
@@ -307,7 +327,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row mb-3">
                     <div class="col-lg-12">
                         <div class="collapse_transaction mt-0">
                             <ul uk-accordion>
@@ -351,7 +371,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="form-group">
-                                                            <input class="inputMaterial" id="username" type="text" value="" required>
+                                                            <input class="inputMaterial" id="" type="text" value="" required>
                                                             <label class="label"> وصف المستند </label>
                                                         </div>
                                                         <div class="remove_box text-center">
@@ -362,7 +382,7 @@
                                             </div>
                                             <div class="col-md-3">
                                                 <div class="add_docment_box">
-                                                    <a class="btn-floating btn-large waves-effect waves-light black larger"><i class="material-icons">note_add</i></a>
+                                                    <a id="add_box" class="btn-floating btn-large waves-effect waves-light black larger"><i class="material-icons">note_add</i></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -372,15 +392,52 @@
                         </div>
                     </div>
                 </div>
+                <div class="row mb-3">
+                    <div class="col-lg-12">
+                        <div class="collapse_transaction mt-0">
+                            <ul uk-accordion>
+                                <li class="uk-open text-right">
+                                    <a class="uk-accordion-title" href="#"> معلومات إضافية عن النموذج </a>
+                                    <div class="uk-accordion-content no_height">
+                                        <form>
+                                            <div class="form-group mb-0">
+                                                <textarea class="inputMaterial_textarea" rows="5" id="" type="text" value="" required placeholder="الغرض من الوكاله"></textarea>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row form-actions">
+                    <div class="col-lg-6 offset-3">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-6 mb-0">
+                                    <input class="inputMaterial" step="1" min="0" max="" value="0" id="add_number" type="number" inputmode="numeric" required>
+                                    <i class="material-icons plus add_number">add</i>
+                                    <i class="material-icons mins add_number">remove</i>
+                                    <label class="label"> عدد نسخ الطباعه </label>
+                                    <p class="text-right font-small font-weight-bold mt-1"> عدد النماذج المراد طباعتها </p>
+                                </div>
+                                <div class="form-group col-6 mb-0">
+                                    <a class="waves-effect waves-light btn w-100 d-block btn_gray"> اضافة </a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
+        <!-- start footer here -->
+        <footer class="footer footer-bg text-center mt-5">
+            <span class="ml-4"> تم تطويره بواسطة </span>
+            <a class="footer_logo" href="#"><img src="assets/img/logo-uc-light.png"></a>
+            <a class="footer_logo" href="#"><img src="assets/img/logo-unicom-light.svg"></a>
+        </footer>
     </div>
-    <!-- start footer here -->
-    <footer class="footer footer-bg text-center">
-        <span class="ml-4"> تم تطويره بواسطة </span>
-        <a class="footer_logo" href="#"><img src="assets/img/logo-uc-light.png"></a>
-        <a class="footer_logo" href="#"><img src="assets/img/logo-unicom-light.svg"></a>
-    </footer>
+
 
 
 
