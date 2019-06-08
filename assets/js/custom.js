@@ -3,6 +3,7 @@ $(document).ready(function() {
     $('.dropdown-trigger').dropdown();
     $('.datepicker').datepicker();
     $('select').formSelect();
+
     // start upload image
     var readURL = function(input) {
         if (input.files && input.files[0]) {

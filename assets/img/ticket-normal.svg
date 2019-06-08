@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="174px" height="212px" viewBox="0 0 174 212" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.1 (78136) - https://sketchapp.com -->
+    <title>ticket-normal</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-opacity="0.5">
+        <g id="Dashboard" transform="translate(-522.000000, -401.000000)" fill="#FFFFFF" stroke="#000000">
+            <g id="Body" transform="translate(150.000000, 120.000000)">
+                <g id="2" transform="translate(0.000000, 268.000000)">
+                    <g id="Items" transform="translate(373.254519, 14.000000)">
+                        <g id="3" transform="translate(0.745481, 0.000000)">
+                            <path d="M170,140 L170,200 C170,205.522847 165.522847,210 160,210 L10,210 C4.4771525,210 6.76353751e-16,205.522847 0,200 L0,140 C5.86802547,140 10.625,135.522847 10.625,130 C10.625,124.477153 5.86802547,120 0,120 L0,10 C-6.76353751e-16,4.4771525 4.4771525,1.01453063e-15 10,0 L160,0 C165.522847,-1.01453063e-15 170,4.4771525 170,10 L170,120 C164.131975,120 159.375,124.477153 159.375,130 C159.375,135.522847 164.131975,140 170,140 Z" id="ticket-normal"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
