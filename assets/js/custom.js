@@ -89,9 +89,8 @@ $(document).ready(function() {
     // add stikey when back to scroll up
     var didScroll;
     var lastScrollTop = 0;
-    var delta = 5;
+    var delta = 250;
     var navbarHeight = $('.form-actions').outerHeight();
-    console.log(navbarHeight);
 
     $(window).scroll(function(event) {
         didScroll = true;
@@ -106,6 +105,7 @@ $(document).ready(function() {
 
     function hasScrolled() {
         var st = $(this).scrollTop();
+        console.log(st);
 
         // Make scroll more than delta
         if (Math.abs(lastScrollTop - st) <= delta)

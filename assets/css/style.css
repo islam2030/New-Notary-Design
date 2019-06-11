@@ -123,22 +123,22 @@
     
     textarea::-webkit-input-placeholder {
         /* Chrome/Opera/Safari */
-        color: rgba(0, 0, 0, 0.32);
+        color: rgba(0, 0, 0, 0.6);
     }
     
     textarea::-moz-placeholder {
         /* Firefox 19+ */
-        color: rgba(0, 0, 0, 0.32);
+        color: rgba(0, 0, 0, 0.6);
     }
     
     textarea:-ms-input-placeholder {
         /* IE 10+ */
-        color: rgba(0, 0, 0, 0.32);
+        color: rgba(0, 0, 0, 0.6);
     }
     
     textarea:-moz-placeholder {
         /* Firefox 18- */
-        color: rgba(0, 0, 0, 0.32);
+        color: rgba(0, 0, 0, 0.6);
     }
     
     @-moz-document url-prefix() {
@@ -1093,19 +1093,22 @@
     }
     
     .collapse_transaction .uk-open>.uk-accordion-title::before {
-        background-image: url(../img/miin.png);
+        font-family: "material";
+        color: #fff;
+        font-size: 25px;
+        content: "";
     }
     
     .collapse_transaction .uk-accordion-title::before {
-        content: "";
+        content: "";
         width: 1em;
         height: 1em;
         margin-right: 10px;
         float: right;
-        background-image: url(../img/plus.png);
-        background-repeat: no-repeat;
-        background-position: 50% 50%;
-        margin-top: 4px;
+        margin-top: 3px;
+        font-family: "material";
+        color: #fff;
+        font-size: 25px;
     }
     
     .numberic {
@@ -1177,7 +1180,7 @@
         color: rgba(56, 56, 56, 1);
         text-align: center;
         padding: 9px 0;
-        border-bottom: 1px solid #afb6b7;
+        border-bottom: 1px solid #afb6b7 !important;
     }
     
     .collapse_transaction .rows .actions i:last-child {
@@ -1564,6 +1567,11 @@
         border-image-slice: 1;
         border-image-repeat: round;
         opacity: 0.3;
+    }
+    
+    .titket_normal:hover .underline {
+        border-image-source: url(../img/line-hover.png);
+        border-bottom: dashed 1px #fff;
     }
     
     .titket_normal small {
