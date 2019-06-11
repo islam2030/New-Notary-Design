@@ -1,8 +1,31 @@
 $(document).ready(function() {
+    // start glabel
     $('.modal').modal();
     $('.dropdown-trigger').dropdown();
     $('.datepicker').datepicker();
     $('select').formSelect();
+
+    // start datepicker arabic
+    $('.datepicker').datepicker({
+        firstDay: true,
+        autoClose: true,
+        format: 'yyyy-mm-dd',
+        i18n: {
+            months: ["كانون الثاني", "شباط", "آذار", "نيسان", "أيار", "حزيران", "تموز", "آب", "أيلول", "تشرين الأول", "تشرين الثاني", "كانون الأول"],
+            monthsShort: ["كانون الثاني", "شباط", "آذار", "نيسان", "أيار", "حزيران", "تموز", "آب", "أيلول", "تشرين الأول", "تشرين الثاني", "كانون الأول"],
+            weekdays: ["الجمعه", "الخميس", "الاربعاء", "الثلاثاء", "الاثنين", "حد", "سبت"],
+            weekdaysShort: ["الجمعه", "الخميس", "الاربعاء", "الثلاثاء", "الاثنين", "حد", "سبت"],
+            weekdaysAbbrev: ["ج", "خ", "ر", "ث", "ت", "ح", "س"]
+        }
+    });
+
+    // start button loading action
+    $('.btn').on('click', function() {
+        $(this).addClass('btn--loading');
+        setTimeout(() => {
+            $(this).removeClass('btn--loading');
+        }, 2000);
+    });
 
     // start upload image
     var readURL = function(input) {
@@ -46,7 +69,6 @@ $(document).ready(function() {
     });
 
     // add one step numberic
-
     $(".add_number").on("click", function() {
         console.log('clicked');
         var button = $(this);
@@ -65,11 +87,11 @@ $(document).ready(function() {
     });
 
     // add stikey when back to scroll up
-    // Hide header on scroll down
     var didScroll;
     var lastScrollTop = 0;
-    var delta = 0;
+    var delta = 5;
     var navbarHeight = $('.form-actions').outerHeight();
+    console.log(navbarHeight);
 
     $(window).scroll(function(event) {
         didScroll = true;
@@ -99,7 +121,6 @@ $(document).ready(function() {
                 $('.form-actions').addClass('scroll-up');
             }
         }
-
         lastScrollTop = st;
     }
 
@@ -109,17 +130,13 @@ function showPassword() {
     var prev = document.getElementById("password");
     if (prev.type === "password") {
         prev.type = "text";
+        $(".view").removeClass().addClass("eye-slash");
     } else {
         prev.type = "password";
+        $(".eye-slash").removeClass().addClass("view");
     }
 }
 // start remove or reset data input
 function removeData() {
     document.getElementById("myForm").reset();
 }
-
-// start add box
-// document.getElementById('add_box').onclick = function
-// createBox() {
-
-// }

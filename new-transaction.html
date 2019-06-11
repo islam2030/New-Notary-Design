@@ -17,8 +17,9 @@
 </head>
 
 <body>
-
+    <!-- start wrapper here -->
     <div class="wrapper">
+        <!-- start header here -->
         <header class="header">
             <div class="container">
                 <div class="row mb-0">
@@ -56,8 +57,9 @@
                                             ياسر لطفي
                                     </button>
                                     <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                                        <a class="dropdown-item" href="#!">Action</a>
-                                        <a class="dropdown-item" href="#!">Another action</a>
+                                        <a class="dropdown-item" href="#!"> تغيير كلمة المرور </a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#!">تسجيل الخروج</a>
                                     </div>
                                 </div>
                             </div>
@@ -66,20 +68,21 @@
                 </div>
             </div>
         </header>
+        <!-- end header here -->
         <!-- start content here -->
         <div class="body_content padding_section">
             <div class="container">
                 <div class="row mb-3">
-                    <div class="col-lg-4 col-md-12 pl-0">
+                    <div class="col-lg-4 col-md-12 pl-lg-0">
                         <div class="small-boxs text-center">
                             <div class="btn_back text-center d-block btn_back_postion">
-                                <a href="#" class="btn-floating btn-large waves-effect waves-light icon-back"><i class="fa fa-long-arrow-right"></i></a>
-                                <a href="#" class="back"> عودة للخلف </a>
+                                <a href="index.html" class="btn-floating btn-large waves-effect waves-light icon-back"><i class="fa fa-long-arrow-right"></i></a>
+                                <a href="index.html" class="back"> عودة للخلف </a>
                             </div>
                             <a class="waves-effect btn-light btn text-center"> وكاله خاصة </a>
                         </div>
                     </div>
-                    <div class="col-lg-8 col-md-12 pr-0">
+                    <div class="col-lg-8 col-md-12 pr-lg-0">
                         <div class="boxs box_postion">
                             <div class="boxs-head bg-blue">
                                 <h2>بيانات نموذج معاملة (شهادة تسجيل ماكنة)</h2>
@@ -137,11 +140,11 @@
                                     <div class="form-group">
                                         <div class="input-field inputMaterial">
                                             <select>
-                                                    <option value="" disabled selected> البطاقة الوطنية الموحدة </option>
-                                                    <option value="1">Option 1</option>
-                                                    <option value="2">Option 2</option>
-                                                    <option value="3">Option 3</option>
-                                                </select>
+                                                <option value="" disabled selected> البطاقة الوطنية الموحدة </option>
+                                                <option value="1">Option 1</option>
+                                                <option value="2">Option 2</option>
+                                                <option value="3">Option 3</option>
+                                            </select>
                                             <label class="select_lable"> نوع هوية المواطن </label>
                                         </div>
                                     </div>
@@ -191,7 +194,7 @@
                                     <a class="uk-accordion-title" href="#"> بيانات الوكلاء </a>
                                     <span class="numberic">2</span>
                                     <div class="uk-accordion-content p-0">
-                                        <table class="table">
+                                        <table class="table table-striped">
                                             <thead class="thead-dark">
                                                 <tr>
                                                     <th></th>
@@ -211,8 +214,8 @@
                                                             <img src="assets/img/person-placeholder.png" title="" alt="">
                                                         </span>
                                                         <div class="actions">
-                                                            <i class="material-icons">edit</i>
-                                                            <i class="material-icons">delete_forever</i>
+                                                            <a href="#"><i class="material-icons">edit</i></a>
+                                                            <a href="#"><i class="material-icons">delete_forever</i></a>
                                                         </div>
                                                     </td>
                                                     <td>
@@ -225,14 +228,14 @@
                                                     <td>مصري</td>
                                                     <td>مدينة الموصل - الموصل</td>
                                                 </tr>
-                                                <tr class="rows bg-rows">
+                                                <tr class="rows">
                                                     <td>
                                                         <span class="image_user mr-2">
                                                             <img src="assets/img/person-placeholder.png" title="" alt="">
                                                         </span>
                                                         <div class="actions">
-                                                            <i class="material-icons">edit</i>
-                                                            <i class="material-icons">delete_forever</i>
+                                                            <a href="#"><i class="material-icons">edit</i></a>
+                                                            <a href="#"><i class="material-icons">delete_forever</i></a>
                                                         </div>
                                                     </td>
                                                     <td>
@@ -257,10 +260,9 @@
                                     <a class="uk-accordion-title" href="#"> بيانات الموكلين  </a>
                                     <span class="numberic">1</span>
                                     <div class="uk-accordion-content p-0">
-                                        <table class="table">
+                                        <table class="table table-striped">
                                             <thead class="thead-dark">
                                                 <tr>
-
                                                     <th></th>
                                                     <th>هوية المواطن</th>
                                                     <th> رقم هوية المواطن </th>
@@ -279,8 +281,8 @@
                                                             
                                                         </span>
                                                         <div class="actions">
-                                                            <i class="material-icons">edit</i>
-                                                            <i class="material-icons">delete_forever</i>
+                                                            <a href="#"><i class="material-icons">edit</i></a>
+                                                            <a href="#"><i class="material-icons">delete_forever</i></a>
                                                         </div>
                                                     </td>
                                                     <td>
@@ -293,18 +295,14 @@
                                                     <td>مصري</td>
                                                     <td>مدينة الموصل - الموصل</td>
                                                 </tr>
-                                                <tr class="rows bg-rows">
-                                                    <!-- <td class="actions">
-                                                            <i class="material-icons">edit</i>
-                                                            <i class="material-icons">delete_forever</i>
-                                                        </td> -->
+                                                <tr class="rows">
                                                     <td>
                                                         <span class="image_user mr-2">
                                                             <img src="assets/img/person-placeholder.png" title="" alt="">
                                                         </span>
                                                         <div class="actions">
-                                                            <i class="material-icons">edit</i>
-                                                            <i class="material-icons">delete_forever</i>
+                                                            <a href="#"><i class="material-icons">edit</i></a>
+                                                            <a href="#"><i class="material-icons">delete_forever</i></a>
                                                         </div>
                                                     </td>
                                                     <td>
@@ -336,7 +334,7 @@
                                     <span class="numberic">1</span>
                                     <div class="uk-accordion-content">
                                         <div class="row">
-                                            <div class="col-md-3">
+                                            <div class="col-lg-3 col-md-5">
                                                 <div class="docment_box">
                                                     <div class="head-area">
                                                         <ul class="nav upload_list">
@@ -443,16 +441,16 @@
                                                         <h4 class="list_title"> السجل المنقول منه </h4>
                                                         <div class="form-group">
                                                             <input class="inputMaterial" id="" type="text" value="" required>
-                                                            <label class="label"> العدد </label>
+                                                            <label class="label label_gray"> العدد </label>
                                                         </div>
                                                         <div class="form-group">
                                                             <input class="inputMaterial datepicker" id="" type="text" value="" required>
                                                             <span class="calendar datepicker"></span>
-                                                            <label class="label"> التاريخ </label>
+                                                            <label class="label label_gray"> التاريخ </label>
                                                         </div>
                                                         <div class="form-group">
                                                             <input class="inputMaterial" id="" type="text" value="" required>
-                                                            <label class="label"> الجلد </label>
+                                                            <label class="label label_gray"> الجلد </label>
                                                         </div>
                                                     </div>
 
@@ -481,11 +479,11 @@
                                                         <h4 class="list_title"> معلومات أساسية </h4>
                                                         <div class="form-group">
                                                             <input class="inputMaterial" id="" type="text" value="" required>
-                                                            <label class="label"> إسم المالك ومقدار الأسهم </label>
+                                                            <label class="label label_gray"> إسم المالك ومقدار الأسهم </label>
                                                         </div>
                                                         <div class="form-group">
                                                             <input class="inputMaterial" id="" type="text" value="" required>
-                                                            <label class="label"> إسم المصنع / الشركة </label>
+                                                            <label class="label label_gray"> إسم المصنع / الشركة </label>
                                                         </div>
                                                     </div>
 
@@ -528,38 +526,38 @@
                                                         <h4 class="list_title"> معلومات خاصة بالرهن </h4>
                                                         <div class="form-group">
                                                             <input class="inputMaterial" id="" type="text" value="" required>
-                                                            <label class="label"> الراهن </label>
+                                                            <label class="label label_gray"> الراهن </label>
                                                         </div>
                                                         <div class="form-group">
                                                             <input class="inputMaterial" id="" type="text" value="" required>
-                                                            <label class="label"> المرتهن </label>
+                                                            <label class="label label_gray"> المرتهن </label>
                                                         </div>
                                                         <div class="form-group">
                                                             <input class="inputMaterial" id="" type="text" value="" required>
-                                                            <label class="label"> نوع الرهن </label>
+                                                            <label class="label label_gray"> نوع الرهن </label>
                                                         </div>
                                                         <div class="form-group">
                                                             <input class="inputMaterial" id="" type="text" value="" required>
-                                                            <label class="label"> قيمه الرهن </label>
+                                                            <label class="label label_gray"> قيمه الرهن </label>
                                                         </div>
                                                         <div class="form-group">
                                                             <input class="inputMaterial datepicker" id="" type="text" value="" required>
                                                             <span class="calendar datepicker"></span>
-                                                            <label class="label"> تاريخ إبتداء الرهن </label>
+                                                            <label class="label label_gray"> تاريخ إبتداء الرهن </label>
                                                         </div>
                                                         <div class="form-group">
                                                             <input class="inputMaterial datepicker" id="" type="text" value="" required>
                                                             <span class="calendar datepicker"></span>
-                                                            <label class="label"> تاريخ إنتهاء الرهن </label>
+                                                            <label class="label label_gray"> تاريخ إنتهاء الرهن </label>
                                                         </div>
                                                         <div class="form-group">
                                                             <input class="inputMaterial" id="" type="text" value="" required>
-                                                            <label class="label"> الحجوزات الأخرى </label>
+                                                            <label class="label label_gray"> الحجوزات الأخرى </label>
                                                         </div>
                                                         <div class="form-group">
                                                             <input class="inputMaterial datepicker" id="" type="text" value="" required>
                                                             <span class="calendar datepicker"></span>
-                                                            <label class="label"> تاريخ رفع الرهن </label>
+                                                            <label class="label label_gray"> تاريخ رفع الرهن </label>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -601,23 +599,23 @@
                                                         <h4 class="list_title"> معلومات أخرى </h4>
                                                         <div class="form-group">
                                                             <input class="inputMaterial" id="" type="text" value="" required>
-                                                            <label class="label"> الغرض </label>
+                                                            <label class="label label_gray"> الغرض </label>
                                                         </div>
                                                         <div class="form-group">
                                                             <input class="inputMaterial" id="" type="text" value="" required>
-                                                            <label class="label"> أية معلومات أخرى </label>
+                                                            <label class="label label_gray"> أية معلومات أخرى </label>
                                                         </div>
                                                         <div class="form-group">
                                                             <input class="inputMaterial" id="" type="text" value="" required>
-                                                            <label class="label"> بدل الشراء  </label>
+                                                            <label class="label label_gray"> بدل الشراء  </label>
                                                         </div>
                                                         <div class="form-group">
                                                             <input class="inputMaterial" id="" type="text" value="" required>
-                                                            <label class="label"> القيمة المقدرة </label>
+                                                            <label class="label label_gray"> القيمة المقدرة </label>
                                                         </div>
                                                         <div class="form-group">
                                                             <input class="inputMaterial" id="" type="text" value="" required>
-                                                            <label class="label"> التصرفات التجارية </label>
+                                                            <label class="label label_gray"> التصرفات التجارية </label>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -630,7 +628,7 @@
                     </div>
                 </div>
                 <div class="row form-actions">
-                    <div class="col-lg-6 offset-3">
+                    <div class="col-lg-6 col-md-6 offset-3">
                         <form>
                             <div class="form-row">
                                 <div class="form-group col-6 mb-0">
@@ -641,7 +639,13 @@
                                     <p class="text-right font-small font-weight-bold mt-1"> عدد النماذج المراد طباعتها </p>
                                 </div>
                                 <div class="form-group col-6 mb-0">
-                                    <a class="waves-effect waves-light btn w-100 d-block btn_gray"> اضافة </a>
+                                    <a class="waves-effect waves-light btn w-100 d-block btn_blue"> اضافة 
+                                        <span>
+                                            <b></b>
+                                            <b></b>
+                                            <b></b>
+                                        </span>
+                                    </a>
                                 </div>
                             </div>
                         </form>
@@ -649,7 +653,9 @@
                 </div>
             </div>
         </div>
+        <!-- end content here -->
     </div>
+    <!-- end wrapper here -->
     <!-- start footer here -->
     <footer class="footer footer-bg text-center mt-5">
         <span class="ml-4"> تم تطويره بواسطة </span>
@@ -661,7 +667,7 @@
 
 
     <script src="assets/js/jquery-3.4.1.js"></script>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/popper.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/materialize.min.js"></script>
     <script src="assets/js/uikit-icons.min.js"></script>

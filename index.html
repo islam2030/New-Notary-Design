@@ -13,12 +13,12 @@
     <link rel="stylesheet" href="assets/css/uikit-rtl.min.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
-
 </head>
 
 <body>
-
+    <!-- start wrapper here -->
     <div class="wrapper">
+        <!-- start header here -->
         <header class="header">
             <div class="container">
                 <div class="row mb-0">
@@ -53,11 +53,12 @@
                                 <h3 class="mb-0 mt-2"> الخميس 23 أيار 2019 </h3>
                                 <div class="dropdown">
                                     <button class="dropdown-toggle btn-dropdown" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                    ياسر لطفي
-                                            </button>
+                                        ياسر لطفي
+                                    </button>
                                     <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                                        <a class="dropdown-item" href="#!">Action</a>
-                                        <a class="dropdown-item" href="#!">Another action</a>
+                                        <a class="dropdown-item" href="#!"> تغيير كلمة المرور </a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#!">تسجيل الخروج</a>
                                     </div>
                                 </div>
                             </div>
@@ -66,12 +67,14 @@
                 </div>
             </div>
         </header>
+        <!-- end header here -->
         <!-- start content here -->
         <div class="body_content padding_section">
             <div class="container">
+                <!-- start transaction here -->
                 <div class="transaction">
                     <div class="row ml-0">
-                        <div class="col-md-3">
+                        <div class="col-lg-3 col-md-4">
                             <div class="transaction_box">
                                 <div class="number color-green"> 25 </div>
                                 <div class="title color-green">
@@ -81,7 +84,7 @@
                                 <p> المعاملات التي تم إنشاءها اليوم </p>
                             </div>
                         </div>
-                        <div class="col-md-9 p-0">
+                        <div class="col-lg-9 col-md-8 p-0">
                             <div class="transaction_content text-right">
                                 <div class="head mb-4 color-green">
                                     <i class="material-icons transaction_icons">add_circle </i> معامله جديدة
@@ -91,132 +94,142 @@
                                         <a class="nav-link active" id="pills-1-tab" data-toggle="pill" href="#pills-1" role="tab" aria-controls="pills-1" aria-selected="true"> وكالات </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" id="pills-2-tab" data-toggle="pill" href="#pills-2" role="tab" aria-controls="pills-2" aria-selected="false"> وصولات </a>
+                                        <a class="nav-link" id="pills-2-tab" data-toggle="pill" href="#pills-2" role="tab" aria-controls="pills-2" aria-selected="true"> وصولات </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" id="pills-3-tab" data-toggle="pill" href="#pills-3" role="tab" aria-controls="pills-3" aria-selected="false"> تصديق </a>
+                                        <a class="nav-link" id="pills-3-tab" data-toggle="pill" href="#pills-3" role="tab" aria-controls="pills-3" aria-selected="true"> تصديق </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" id="pills-4-tab" data-toggle="pill" href="#pills-4" role="tab" aria-controls="pills-4" aria-selected="false"> عقود </a>
+                                        <a class="nav-link" id="pills-4-tab" data-toggle="pill" href="#pills-4" role="tab" aria-controls="pills-4" aria-selected="true"> عقود </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" id="pills-5-tab" data-toggle="pill" href="#pills-5" role="tab" aria-controls="pills-5" aria-selected="false"> انذارات </a>
+                                        <a class="nav-link" id="pills-5-tab" data-toggle="pill" href="#pills-5" role="tab" aria-controls="pills-5" aria-selected="true"> انذارات </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" id="pills-6-tab" data-toggle="pill" href="#pills-6" role="tab" aria-controls="pills-6" aria-selected="false"> استسمارات </a>
+                                        <a class="nav-link" id="pills-6-tab" data-toggle="pill" href="#pills-6" role="tab" aria-controls="pills-6" aria-selected="true"> استسمارات </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" id="pills-7-tab" data-toggle="pill" href="#pills-7" role="tab" aria-controls="pills-7" aria-selected="false"> اخرى </a>
+                                        <a class="nav-link" id="pills-7-tab" data-toggle="pill" href="#pills-7" role="tab" aria-controls="pills-7" aria-selected="true"> اخرى </a>
                                     </li>
                                 </ul>
                                 <div class="tab-content" id="pills-tabContent">
                                     <div class="tab-pane fade show active" id="pills-1" role="tabpanel" aria-labelledby="pills-1-tab">
                                         <ul class="nav">
                                             <li class="nav-item">
-                                                <a class="nav-link active" href="#!"> عقد ايجار </a>
+                                                <a class="nav-link" href="new-transaction.html"> عقد ايجار </a>
                                             </li>
-                                            <li class="nav-item">
+                                            <li class=" nav-item ">
                                                 <a class="nav-link" href="#!"> عقد عمل </a>
                                             </li>
-                                            <li class="nav-item">
+                                            <li class="nav-item ">
                                                 <a class="nav-link" href="#!"> عقد بيع </a>
                                             </li>
                                         </ul>
                                     </div>
-                                    <div class="tab-pane fade" id="pills-2" role="tabpanel" aria-labelledby="pills-2-tab">...</div>
-                                    <div class="tab-pane fade" id="pills-3" role="tabpanel" aria-labelledby="pills-3-tab">...</div>
+                                    <div class="tab-pane fade " id="pills-2" role="tabpanel " aria-labelledby="pills-2-tab ">...</div>
+                                    <div class="tab-pane fade " id="pills-3" role="tabpanel " aria-labelledby="pills-3-tab ">...</div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="transaction">
-                    <div class="row ml-0">
-                        <div class="col-md-3">
-                            <div class="transaction_box">
-                                <div class="number"> 3 </div>
-                                <div class="title">
+                <!-- end transaction here -->
+                <!-- start transaction here -->
+                <div class="transaction ">
+                    <div class="row ml-0 ">
+                        <div class="col-lg-3 col-md-4 ">
+                            <div class="transaction_box ">
+                                <div class="number "> 3 </div>
+                                <div class="title ">
                                     معاملات مُعاد توجيهها
                                 </div>
                                 <p> المعاملات التي تم إنشاءها اليوم </p>
                             </div>
                         </div>
-                        <div class="col-md-9 p-0">
-                            <div class="transaction_content text-right">
-                                <div class="row">
-                                    <div class="col-md-3">
-                                        <div class="titket_normal text-center">
-                                            <small> تذكرة رقم </small>
-                                            <div class="title_head">
-                                                <div class="number"> 50 </div>
+                        <div class="col-lg-9 col-md-8 p-0 ">
+                            <div class="transaction_content text-right ">
+                                <div class="row ">
+                                    <div class="col-lg-3 col-md-6">
+                                        <a href="">
+                                            <div class="titket_normal text-center ">
+                                                <small> تذكرة رقم </small>
+                                                <div class="title_head ">
+                                                    <div class="number "> 50 </div>
+                                                </div>
+                                                <div class="underline "></div>
+                                                <div class="content ">
+                                                    <div class="name "> احمد عبد الجواد </div>
+                                                    <p class="desc mb-0 "> وكالة عامة مخصوصة </p>
+                                                </div>
                                             </div>
-                                            <div class="underline"></div>
-                                            <div class="content">
-                                                <div class="name"> احمد عبد الجواد </div>
-                                                <p class="desc mb-0"> وكالة عامة مخصوصة </p>
-                                            </div>
-                                        </div>
+                                        </a>
                                     </div>
-                                    <div class="col-md-3">
-                                        <div class="titket_normal text-center">
-                                            <small> تذكرة رقم </small>
-                                            <div class="title_head">
-                                                <div class="number"> 50 </div>
+                                    <div class="col-lg-3 col-md-6">
+                                        <a href="">
+                                            <div class="titket_normal text-center ">
+                                                <small> تذكرة رقم </small>
+                                                <div class="title_head ">
+                                                    <div class="number "> 50 </div>
+                                                </div>
+                                                <div class="underline "></div>
+                                                <div class="content ">
+                                                    <div class="name "> احمد عبد الجواد </div>
+                                                    <p class="desc mb-0 "> وكالة عامة مخصوصة </p>
+                                                </div>
                                             </div>
-                                            <div class="underline"></div>
-                                            <div class="content">
-                                                <div class="name"> احمد عبد الجواد </div>
-                                                <p class="desc mb-0"> وكالة عامة مخصوصة </p>
-                                            </div>
-                                        </div>
+                                        </a>
                                     </div>
-                                    <div class="col-md-3">
-                                        <div class="titket_normal text-center">
-                                            <small> تذكرة رقم </small>
-                                            <div class="title_head">
-                                                <div class="number"> 50 </div>
+                                    <div class="col-lg-3 col-md-6">
+                                        <a href="">
+                                            <div class="titket_normal text-center ">
+                                                <small> تذكرة رقم </small>
+                                                <div class="title_head ">
+                                                    <div class="number "> 50 </div>
+                                                </div>
+                                                <div class="underline "></div>
+                                                <div class="content ">
+                                                    <div class="name "> احمد عبد الجواد </div>
+                                                    <p class="desc mb-0 "> وكالة عامة مخصوصة </p>
+                                                </div>
                                             </div>
-                                            <div class="underline"></div>
-                                            <div class="content">
-                                                <div class="name"> احمد عبد الجواد </div>
-                                                <p class="desc mb-0"> وكالة عامة مخصوصة </p>
-                                            </div>
-                                        </div>
+                                        </a>
                                     </div>
-
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="transaction">
-                    <div class="row ml-0">
-                        <div class="col-md-3">
-                            <div class="transaction_box">
-                                <div class="number"> 8 </div>
-                                <div class="title">
+                <!-- end transaction here -->
+                <!-- start transaction here -->
+                <div class="transaction mb-5">
+                    <div class="row ml-0 ">
+                        <div class="col-lg-3 col-md-4 ">
+                            <div class="transaction_box ">
+                                <div class="number "> 8 </div>
+                                <div class="title ">
                                     زيارات خارجية
                                 </div>
                                 <p> الزيارات الخارجية التي تمت اليوم </p>
                             </div>
                         </div>
-                        <div class="col-md-9 p-0">
-                            <div class="transaction_content text-right">
-                                <div class="row">
-                                    <div class="col-md-3">
-                                        <div class="titket_normal text-center">
-                                            <small> كاتب عدل </small>
-                                            <div class="title_head">
-                                                <h2> احمد السيد </h2>
-                                                <p>يرجي اضافة البيانات الاساسية قبل الخروج للزيارة</p>
+                        <div class="col-lg-9 col-md-8 p-0 ">
+                            <div class="transaction_content text-right ">
+                                <div class="row ">
+                                    <div class="col-lg-3 col-md-6">
+                                        <a href="">
+                                            <div class="titket_normal text-center ">
+                                                <small> كاتب عدل </small>
+                                                <div class="title_head ">
+                                                    <h2 class="name"> احمد السيد </h2>
+                                                    <p class="desc">يرجي اضافة البيانات الاساسية قبل الخروج للزيارة</p>
+                                                </div>
+                                                <div class="underline "></div>
+                                                <div class="content ">
+                                                    <div class="name "> احمد عبد الجواد </div>
+                                                    <p class="desc mb-0 "> وكالة عامة </p>
+                                                </div>
                                             </div>
-                                            <div class="underline"></div>
-                                            <div class="content">
-                                                <div class="name"> احمد عبد الجواد </div>
-                                                <p class="desc mb-0"> وكالة عامة </p>
-                                            </div>
-                                        </div>
+                                        </a>
                                     </div>
 
                                 </div>
@@ -224,21 +237,22 @@
                         </div>
                     </div>
                 </div>
+                <!-- end transaction here -->
             </div>
         </div>
     </div>
     <!-- start footer here -->
-    <footer class="footer footer-bg text-center mt-5">
-        <span class="ml-4"> تم تطويره بواسطة </span>
-        <a class="footer_logo" href="#"><img src="assets/img/logo-uc-light.png"></a>
-        <a class="footer_logo" href="#"><img src="assets/img/logo-unicom-light.svg"></a>
+    <footer class="footer footer-bg text-center mt-5 ">
+        <span class="ml-4 "> تم تطويره بواسطة </span>
+        <a class="footer_logo " href="# "><img src="assets/img/logo-uc-light.png "></a>
+        <a class="footer_logo " href="# "><img src="assets/img/logo-unicom-light.svg "></a>
     </footer>
 
 
 
     <script src="assets/js/jquery-3.4.1.js"></script>
+    <script src="assets/js/popper.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/materialize.min.js"></script>
     <script src="assets/js/uikit-icons.min.js"></script>
     <script src="assets/js/uikit.min.js"></script>
