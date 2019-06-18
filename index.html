@@ -8,10 +8,10 @@
     <title>Notary : Dashboard</title>
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/material.css">
-    <link rel="stylesheet" href="assets/fonts/material.ttf">
     <link rel="stylesheet" href="assets/css/materialize.min.css">
     <link rel="stylesheet" href="assets/css/uikit-rtl.min.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-select.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
@@ -72,6 +72,53 @@
         <div class="body_content padding_section">
             <div class="container">
                 <!-- start transaction here -->
+                <div class="transaction border-0">
+                    <div class="row ml-0">
+                        <div class="col-lg-4 col-md-4">
+                            <div class="small-boxs text-center">
+                                <div class="number color-green"> 25 </div>
+                                <div class="title color-green">
+                                    معاملات اليوم
+                                    <i class="material-icons transaction_icons">keyboard_arrow_left </i>
+                                </div>
+                                <p> المعاملات التي تم إنشاءها اليوم </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                            <div class="small-boxs text-center">
+                                <div class="number color-green"> 18,368 <em>د.ع</em></div>
+                                <div class="title color-green">
+                                    إجمالي الرسوم
+                                    <i class="material-icons transaction_icons">keyboard_arrow_left </i>
+                                </div>
+                                <p> إجمالي رسوم المعاملات التي تم إنشاءها اليوم </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                            <div class="small-boxs text-center no-bg filter">
+                                <div class="title">
+                                    <i class="material-icons transaction_icons">filter_list</i> تصفية المعاملات حسب نوع المعاملة
+                                </div>
+                                <form>
+                                    <div class="form-group">
+                                        <div class="input-field inputMaterial">
+                                            <select>
+                                                <option value="" disabled selected> نوع المعاملة </option>
+                                                <option value="1">Option 1</option>
+                                                <option value="2">first 2</option>
+                                                <option value="3">last 3</option>
+                                            </select>
+                                            <label class="select_lable"> نوع المعاملة </label>
+                                        </div>
+                                    </div>
+                                </form>
+
+                                <p> سيتم تصفية المعاملات أدناه حسب نوع المعاملة المختارة </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- start transaction here -->
                 <div class="transaction">
                     <div class="row ml-0">
                         <div class="col-lg-3 col-md-4">
@@ -91,7 +138,7 @@
                                 </div>
                                 <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                                     <li class="nav-item">
-                                        <a class="nav-link active" id="pills-1-tab" data-toggle="pill" href="#pills-1" role="tab" aria-controls="pills-1" aria-selected="true"> وكالات </a>
+                                        <a class="nav-link" id="pills-1-tap" data-toggle="pill" href="#pills-1" role="tab" aria-controls="pills-1" aria-selected="true"> وكالات </a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" id="pills-2-tab" data-toggle="pill" href="#pills-2" role="tab" aria-controls="pills-2" aria-selected="true"> وصولات </a>
@@ -113,7 +160,7 @@
                                     </li>
                                 </ul>
                                 <div class="tab-content" id="pills-tabContent">
-                                    <div class="tab-pane fade show active" id="pills-1" role="tabpanel" aria-labelledby="pills-1-tab">
+                                    <div class="tab-pane fade" id="pills-1" role="tabpanel" aria-labelledby="pills-1-tap">
                                         <ul class="nav">
                                             <li class="nav-item">
                                                 <a class="nav-link" href="new-transaction.html"> عقد ايجار </a>
@@ -133,6 +180,7 @@
                         </div>
                     </div>
                 </div>
+
                 <!-- end transaction here -->
                 <!-- start transaction here -->
                 <div class="transaction ">
@@ -200,6 +248,7 @@
                     </div>
                 </div>
                 <!-- end transaction here -->
+
                 <!-- start transaction here -->
                 <div class="transaction mb-5">
                     <div class="row ml-0 ">
@@ -257,6 +306,7 @@
     <script src="assets/js/uikit-icons.min.js"></script>
     <script src="assets/js/uikit.min.js"></script>
     <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/bootstrap-select.min.js"></script>
     <script src="assets/js/custom.js"></script>
 </body>
 

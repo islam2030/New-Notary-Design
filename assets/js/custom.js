@@ -4,6 +4,8 @@ $(document).ready(function() {
     $('.dropdown-trigger').dropdown();
     $('.datepicker').datepicker();
     $('select').formSelect();
+    $('input.autocomplete').autocomplete();
+
 
     // start datepicker arabic
     $('.datepicker').datepicker({

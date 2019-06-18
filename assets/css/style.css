@@ -1,20 +1,20 @@
     @font-face {
         font-family: "Bahij TheSansArabic Plain";
-        src: url("../fonts/Bahij_TheSansArabic-Plain.ttf");
+        src: url("../fonts/BahijTheSansArabicIndic-Plain.ttf");
         font-style: normal;
         font-weight: 100;
     }
     
     @font-face {
         font-family: "Bahij TheSansArabic Plain";
-        src: url("../fonts/Bahij_TheSansArabic-SemiBold.ttf");
+        src: url("../fonts/BahijTheSansArabicIndic-SemiBold.ttf");
         font-style: normal;
         font-weight: 400;
     }
     
     @font-face {
         font-family: "Bahij TheSansArabic Plain";
-        src: url("../fonts/Bahij_TheSansArabic-Bold.ttf");
+        src: url("../fonts/BahijTheSansArabicIndic-Bold.ttf");
         font-style: normal;
         font-weight: 600;
     }
@@ -25,7 +25,6 @@
         font-style: normal;
         font-weight: 400;
     }
-    /* fallback */
     
     html {
         height: 100%;
@@ -170,10 +169,6 @@
     
     .padding_section {
         padding: 30px 0;
-    }
-    
-    .btn:focus {
-        background: none !important;
     }
     
     .font-small {
@@ -604,10 +599,6 @@
     
     .form-group {
         position: relative;
-    }
-    
-    .form_transaction .form-group {
-        margin-bottom: 0 !important
     }
     
     .inputMaterial {
@@ -1650,4 +1641,60 @@
         .transaction_content .nav-pills .nav-link {
             padding: 4px 10.5px;
         }
+    }
+    
+    .transaction .small-boxs .number {
+        font-size: 58px;
+        font-weight: bold
+    }
+    
+    .transaction .small-boxs .title {
+        font-size: 18px;
+        text-align: center;
+        font-weight: bold;
+        color: #015495;
+    }
+    
+    .transaction .small-boxs .transaction_icons {
+        position: relative;
+        top: 9px;
+    }
+    
+    .transaction .small-boxs p {
+        margin-bottom: 0;
+        font-size: 12px;
+        color: rgba(56, 56, 56, 1);
+        text-align: center;
+        line-height: 20px;
+        padding-bottom: 0;
+    }
+    
+    .transaction .small-boxs em {
+        font-size: 12px;
+    }
+    
+    .no-bg {
+        background: none;
+    }
+    
+    .filter {
+        border: 2px solid rgba(211, 211, 211, 1);
+        padding: 11px 20px;
+    }
+    
+    .small-boxs a {
+        font-size: 13px;
+        color: rgba(56, 56, 56, 1);
+        font-weight: bold;
+    }
+    
+    .color-light {
+        color: rgba(56, 56, 56, 0.5) !important;
+    }
+    
+    .form-group i {
+        position: absolute;
+        left: 20px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.38);
     }
