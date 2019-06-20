@@ -328,65 +328,109 @@
                 <div class="row mb-3">
                     <div class="col-lg-12">
                         <div class="collapse_transaction mt-0">
-                            <ul uk-accordion>
-                                <li class="uk-open text-right">
-                                    <a class="uk-accordion-title" href="#"> المستندات الخاصة بالمعاملة </a>
-                                    <span class="numberic">1</span>
-                                    <div class="uk-accordion-content">
-                                        <div class="row">
-                                            <div class="col-lg-3 col-md-5">
-                                                <div class="docment_box">
-                                                    <div class="head-area">
-                                                        <ul class="nav upload_list">
-                                                            <li class="nav-item">
-                                                                <label class="file-input" for="file-input">
-                                                                    <i class="material-icons icons"> attach_file</i>
-                                                                    إضافة مستند
-                                                                </label>
-                                                                <input id="file-input" class="image-upload" type="file" accept="image/*" />
-                                                            </li>
-                                                            <li class="nav-item">
-                                                                <button type="button" class="scan_link">
-                                                                    <i class="material-icons icons upload">scanner</i>
-                                                                    مسح ضوئى
-                                                                </button>
-                                                            </li>
-                                                        </ul>
-                                                        <div class="preview-pic">
-                                                            <img class="prev-pic" src="assets/img/prev-pic.png">
-                                                        </div>
-                                                    </div>
-                                                    <form class="form mt-5">
-                                                        <div class="form-group">
-                                                            <div class="input-field inputMaterial">
-                                                                <select>
-                                                                    <option value="" disabled selected> نوع المستند </option>
-                                                                    <option value="1">Option 1</option>
-                                                                    <option value="2">Option 2</option>
-                                                                    <option value="3">Option 3</option>
-                                                                </select>
-                                                                <label class="select_lable">نوع المستند</label>
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <input class="inputMaterial" id="" type="text" value="" required>
-                                                            <label class="label"> وصف المستند </label>
-                                                        </div>
-                                                        <div class="remove_box text-center">
-                                                            <a class="btn-floating btn-large waves-effect waves-light red remove-button"><i class="material-icons">delete_forever</i></a>
-                                                        </div>
-                                                    </form>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-3">
-                                                <div class="add_docment_box">
-                                                    <a id="add_box" class="btn-floating btn-large waves-effect waves-light black larger"><i class="material-icons">note_add</i></a>
-                                                </div>
+                            <div class="row">
+                                <div class="col-lg-4 col-md-5">
+                                    <div class="docment_box">
+                                        <div class="head-area">
+                                            <ul class="nav upload_list">
+                                                <li class="nav-item">
+                                                    <label class="file-input" for="file-input">
+                                                            <i class="material-icons icons"> attach_file</i>
+                                                            إضافة مستند
+                                                        </label>
+                                                    <input id="file-input" class="image-upload" type="file" accept="image/*" />
+                                                </li>
+                                                <li class="nav-item">
+                                                    <button type="button" class="scan_link">
+                                                            <i class="material-icons icons upload">scanner</i>
+                                                            مسح ضوئى
+                                                        </button>
+                                                </li>
+                                            </ul>
+                                            <div class="preview-pic">
+                                                <img class="prev-pic" src="assets/img/prev-pic.png">
                                             </div>
                                         </div>
+                                        <form class="form mt-5">
+                                            <div class="form-group">
+                                                <div class="input-field inputMaterial">
+                                                    <select>
+                                                            <option value="" disabled selected> نوع المستند </option>
+                                                            <option value="1">Option 1</option>
+                                                            <option value="2">Option 2</option>
+                                                            <option value="3">Option 3</option>
+                                                        </select>
+                                                    <label class="select_lable">نوع المستند</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <input class="inputMaterial" id="" type="text" value="" required>
+                                                <label class="label"> وصف المستند </label>
+                                            </div>
+                                            <div class="form-group">
+                                                <button type="submit" class="waves-effect waves-blue btn w-100 d-block login mt-4"> إضافة المواطن </button>
+                                            </div>
+
+                                        </form>
                                     </div>
-                                </li>
-                            </ul>
+                                </div>
+                                <div class="col-lg-8 col-md-12">
+                                    <ul uk-accordion>
+                                        <li class="uk-open text-right">
+                                            <a class="uk-accordion-title" href="#"> المستندات الخاصة بالمعاملة </a>
+                                            <span class="numberic">1</span>
+                                            <div class="uk-accordion-content p-0">
+                                                <table class="table table-striped">
+                                                    <thead class="thead-dark">
+                                                        <tr>
+                                                            <th></th>
+                                                            <th> نوع المستند </th>
+                                                            <th> وصف المستند </th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr class="rows">
+                                                            <td>
+                                                                <span class="image_user mr-2">
+                                                                        <img src="assets/img/person-placeholder.png" title="" alt="">
+                                                                        
+                                                                    </span>
+                                                                <div class="actions">
+                                                                    <a href="#"><i class="material-icons">visibility</i></a>
+                                                                    <a href="#"><i class="material-icons">delete_forever</i></a>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <span> جواز السفر </span>
+                                                            </td>
+                                                            <td>12345678901234</td>
+
+                                                        </tr>
+                                                        <tr class="rows">
+                                                            <td>
+                                                                <span class="image_user mr-2">
+                                                                        <img src="assets/img/person-placeholder.png" title="" alt="">
+                                                                    </span>
+                                                                <div class="actions">
+                                                                    <a href="#"><i class="material-icons">visibility</i></a>
+                                                                    <a href="#"><i class="material-icons">delete_forever</i></a>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <span><img src="" title="" alt=""></span>
+                                                                <span> جواز السفر </span>
+                                                            </td>
+                                                            <td>12345678901234</td>
+
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
