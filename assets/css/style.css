@@ -1696,6 +1696,12 @@
     .form-group i {
         position: absolute;
         left: 20px;
-        /* top: 15px; */
+        /*top: 15px;
+        */
         color: rgba(0, 0, 0, 0.38);
+        transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
     }
