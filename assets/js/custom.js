@@ -51,6 +51,8 @@ $(document).ready(function() {
     $(".edit-button").on('click', function() {
         $(".file-upload").click();
     });
+
+
     // start anther upload
     var readURL2 = function(input) {
         if (input.files && input.files[0]) {
@@ -59,15 +61,15 @@ $(document).ready(function() {
                 $('.prev-pic').attr('src', e.target.result);
             }
             reader.readAsDataURL(input.files[0]);
-            $(".upload_list").hide();
-            $(".remove_box").show();
+            $(".upload-button_img").hide();
+            $(".edit_button_img").show();
         }
     }
     $("#file-input").on('change', function() {
         readURL2(this);
     });
-    $(".remove-button").on('click', function() {
-        $(".docment_box").remove();
+    $(".edit_button_img").on('click', function() {
+        $("#file-input").click();
     });
 
     // add one step numberic

@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Notary : Not Authorized</title>
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/material.css">
+    <link rel="stylesheet" href="assets/fonts/material.ttf">
+    <link rel="stylesheet" href="assets/css/materialize.min.css">
+    <link rel="stylesheet" href="assets/css/uikit-rtl.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+    <!-- start wrapper here -->
+    <div class="wrapper">
+        <!-- start header here -->
+        <header class="header">
+            <div class="container">
+                <div class="row mb-0">
+                    <div class="col-xl-8 col-lg-8 col-md-8">
+                        <div class="row mb-0">
+                            <div class="col-lg-2 col-md-3 pl-md-0">
+                                <div class="media text-right border-left">
+                                    <img class="d-flex ml-2 flag_logo" src="assets/img/logo-gov.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-5 p-md-0">
+                                <div class="media text-right border-left">
+                                    <img class="d-flex ml-2 flag_logo" src="assets/img/logo-moj.png" alt="">
+                                    <div class="media-body">
+                                        <h5 class="mb-0 mt-2"> وزارة العدل <br> دائرة كاتب العدل الصالحية</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-4 pl-md-0">
+                                <div class="media text-right">
+                                    <div class="media-body">
+                                        <h3 class="mb-0 mt-2"> تطبيق مقدم الخدمة </h3>
+                                        <p> خطأ </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="media text-left">
+                            <div class="media-body">
+                                <h3 class="mb-0 mt-2"> الخميس 23 أيار 2019 </h3>
+                                <div class="dropdown">
+                                    <button class="dropdown-toggle btn-dropdown" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            ياسر لطفي
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                        <a class="dropdown-item" href="#!"> تغيير كلمة المرور </a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#!">تسجيل الخروج</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- end header here -->
+        <!-- start content here -->
+        <div class="body_content padding_section">
+            <div class="container">
+                <div class="row mb-3">
+                    <div class="col-lg-4 col-md-12 pl-lg-0">
+                        <div class="small-boxs text-center">
+                            <div class="btn_back text-center d-block btn_back_postion">
+                                <a href="index.html" class="btn-floating btn-large waves-effect waves-light icon-back"><i class="fa fa-long-arrow-right"></i></a>
+                                <a href="index.html" class="back"> عودة للخلف </a>
+                            </div>
+                            <a href="#"> المعامله </a> > <a href="#" class="color-light"> معاملة #123456 </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-12 pr-lg-0">
+                        <div class="boxs box_postion">
+                            <div class="boxs-head bg-blue">
+                                <h2>بيانات نموذج معاملة (شهادة تسجيل ماكنة)</h2>
+                            </div>
+                            <div class="boxs-body">
+                                <form class="form_transaction" id="myForm">
+                                    <div class="form-row">
+                                        <div class="form-group col-md-3">
+                                            <input class="inputMaterial" id="" type="text" required autofocus>
+                                            <label class="label"> رقم التذكرة </label>
+                                        </div>
+                                        <div class="form-group col-md-3">
+                                            <input class="inputMaterial" id="" type="text" required>
+                                            <label class="label"> رقم السجل </label>
+                                        </div>
+                                        <div class="form-group col-md-3">
+                                            <input class="inputMaterial datepicker" id="" type="text" required>
+                                            <span class="calendar datepicker"></span>
+                                            <label class="label"> تاريخ العملية </label>
+                                        </div>
+                                        <div class="form-group col-md-3">
+                                            <input class="inputMaterial datepicker" id="" value="21/2/2019" type="text" required raedOnlay>
+                                            <span class="calendar datepicker"></span>
+                                            <label class="label"> تاريخ الايميل </label>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-lg-12 col-md-12 pr-0">
+                        <div class="collapse_transaction">
+                            <ul uk-accordion class="mb-3">
+                                <li class="uk-open text-right">
+                                    <a class="uk-accordion-title" href="#"> بيانات الوكلاء </a>
+                                    <span class="numberic">2</span>
+                                    <div class="uk-accordion-content p-0">
+                                        <table class="table table-striped">
+                                            <thead class="thead-dark">
+                                                <tr>
+                                                    <th></th>
+                                                    <th>هوية المواطن</th>
+                                                    <th> رقم هوية المواطن </th>
+                                                    <th> تاريخ إصدار الهوية </th>
+                                                    <th> جهة إصدار الهوية </th>
+                                                    <th> إسم المواطن </th>
+                                                    <th> جنسيةالمواطن </th>
+                                                    <th> عنوان المواطن </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr class="rows">
+                                                    <td>
+                                                        <span class="image_user mr-2">
+                                                            <img src="assets/img/person-placeholder.png" title="" alt="">
+                                                        </span>
+                                                        <div class="actions">
+                                                            <a href="#"><i class="material-icons">edit</i></a>
+                                                            <a href="#"><i class="material-icons">delete_forever</i></a>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <span> جواز السفر </span>
+                                                    </td>
+                                                    <td>12345678901234</td>
+                                                    <td>18/01/2019</td>
+                                                    <td>بغداد</td>
+                                                    <td>ياسر مصطفى لطفي</td>
+                                                    <td>مصري</td>
+                                                    <td>مدينة الموصل - الموصل</td>
+                                                </tr>
+                                                <tr class="rows">
+                                                    <td>
+                                                        <span class="image_user mr-2">
+                                                            <img src="assets/img/person-placeholder.png" title="" alt="">
+                                                        </span>
+                                                        <div class="actions">
+                                                            <a href="#"><i class="material-icons">edit</i></a>
+                                                            <a href="#"><i class="material-icons">delete_forever</i></a>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <span><img src="" title="" alt=""></span>
+                                                        <span> جواز السفر </span>
+                                                    </td>
+                                                    <td>12345678901234</td>
+                                                    <td>18/01/2019</td>
+                                                    <td>بغداد</td>
+                                                    <td>ياسر مصطفى لطفي</td>
+                                                    <td>مصري</td>
+                                                    <td>مدينة الموصل - الموصل</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul uk-accordion>
+                                <li class="uk-open text-right">
+                                    <a class="uk-accordion-title" href="#"> بيانات الموكلين  </a>
+                                    <span class="numberic">1</span>
+                                    <div class="uk-accordion-content p-0">
+                                        <table class="table table-striped">
+                                            <thead class="thead-dark">
+                                                <tr>
+                                                    <th></th>
+                                                    <th>هوية المواطن</th>
+                                                    <th> رقم هوية المواطن </th>
+                                                    <th> تاريخ إصدار الهوية </th>
+                                                    <th> جهة إصدار الهوية </th>
+                                                    <th> إسم المواطن </th>
+                                                    <th> جنسيةالمواطن </th>
+                                                    <th> عنوان المواطن </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr class="rows">
+                                                    <td>
+                                                        <span class="image_user mr-2">
+                                                            <img src="assets/img/person-placeholder.png" title="" alt="">
+                                                            
+                                                        </span>
+                                                        <div class="actions">
+                                                            <a href="#"><i class="material-icons">edit</i></a>
+                                                            <a href="#"><i class="material-icons">delete_forever</i></a>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <span> جواز السفر </span>
+                                                    </td>
+                                                    <td>12345678901234</td>
+                                                    <td>18/01/2019</td>
+                                                    <td>بغداد</td>
+                                                    <td>ياسر مصطفى لطفي</td>
+                                                    <td>مصري</td>
+                                                    <td>مدينة الموصل - الموصل</td>
+                                                </tr>
+                                                <tr class="rows">
+                                                    <td>
+                                                        <span class="image_user mr-2">
+                                                            <img src="assets/img/person-placeholder.png" title="" alt="">
+                                                        </span>
+                                                        <div class="actions">
+                                                            <a href="#"><i class="material-icons">edit</i></a>
+                                                            <a href="#"><i class="material-icons">delete_forever</i></a>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <span><img src="" title="" alt=""></span>
+                                                        <span> جواز السفر </span>
+                                                    </td>
+                                                    <td>12345678901234</td>
+                                                    <td>18/01/2019</td>
+                                                    <td>بغداد</td>
+                                                    <td>ياسر مصطفى لطفي</td>
+                                                    <td>مصري</td>
+                                                    <td>مدينة الموصل - الموصل</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-lg-12">
+                        <div class="collapse_transaction mt-0">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-5">
+                                    <div class="docment_box">
+                                        <div class="head-area">
+                                            <ul class="nav upload_list">
+                                                <li class="nav-item">
+                                                    <label class="file-input" for="file-input">
+                                                        <i class="material-icons icons upload-button_img"> attach_file</i>
+                                                        <i class="material-icons edit-button_img">cached</i>
+                                                        إضافة مستند
+                                                    </label>
+                                                    <input id="file-input" class="image-upload" type="file" accept="image/*" />
+                                                </li>
+                                                <li class="nav-item">
+                                                    <button type="button" class="scan_link">
+                                                        <i class="material-icons icons upload">scanner</i>
+                                                        مسح ضوئى
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                            <div class="preview-pic">
+                                                <img class="prev-pic" src="assets/img/prev-pic.png">
+                                            </div>
+                                        </div>
+                                        <form class="form mt-5">
+                                            <div class="form-group">
+                                                <div class="input-field inputMaterial">
+                                                    <select>
+                                                            <option value="" disabled selected> نوع المستند </option>
+                                                            <option value="1">Option 1</option>
+                                                            <option value="2">Option 2</option>
+                                                            <option value="3">Option 3</option>
+                                                        </select>
+                                                    <label class="select_lable">نوع المستند</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <input class="inputMaterial" id="" type="text" value="" required>
+                                                <label class="label"> وصف المستند </label>
+                                            </div>
+                                            <div class="form-group">
+                                                <button type="submit" class="waves-effect waves-blue btn w-100 d-block login mt-4"> إضافة المواطن </button>
+                                            </div>
+
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-md-12">
+                                    <ul uk-accordion class="uk_accordion_top">
+                                        <li class="uk-open text-right">
+                                            <a class="uk-accordion-title" href="#"> المستندات الخاصة بالمعاملة </a>
+                                            <span class="numberic">1</span>
+                                            <div class="uk-accordion-content p-0">
+                                                <table class="table table-striped">
+                                                    <thead class="thead-dark">
+                                                        <tr>
+                                                            <th></th>
+                                                            <th> نوع المستند </th>
+                                                            <th> وصف المستند </th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr class="rows">
+                                                            <td>
+                                                                <span class="image_user mr-2">
+                                                                        <img src="assets/img/person-placeholder.png" title="" alt="">
+                                                                        
+                                                                    </span>
+                                                                <div class="actions">
+                                                                    <a href="#"><i class="material-icons">visibility</i></a>
+                                                                    <a href="#"><i class="material-icons">delete_forever</i></a>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <span> جواز السفر </span>
+                                                            </td>
+                                                            <td>12345678901234</td>
+
+                                                        </tr>
+                                                        <tr class="rows">
+                                                            <td>
+                                                                <span class="image_user mr-2">
+                                                                        <img src="assets/img/person-placeholder.png" title="" alt="">
+                                                                    </span>
+                                                                <div class="actions">
+                                                                    <a href="#"><i class="material-icons">visibility</i></a>
+                                                                    <a href="#"><i class="material-icons">delete_forever</i></a>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <span><img src="" title="" alt=""></span>
+                                                                <span> جواز السفر </span>
+                                                            </td>
+                                                            <td>12345678901234</td>
+
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-lg-12">
+                        <div class="collapse_transaction mt-0">
+                            <ul uk-accordion>
+                                <li class="uk-open text-right">
+                                    <a class="uk-accordion-title" href="#"> معلومات إضافية عن النموذج </a>
+                                    <div class="uk-accordion-content no_height">
+                                        <form>
+                                            <div class="form-group mb-0">
+                                                <textarea class="inputMaterial_textarea" rows="5" id="" type="text" value="" required placeholder="وكالة لإدارة وتمثيل أمام الجهات الحكومية والخاصة المعنية وغير المعنية."></textarea>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row form-actions">
+                    <div class="col-lg-6 col-md-6 offset-3">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-lg-4 mb-0">
+                                    <a class="waves-effect waves-light btn w-100 d-block btn_blue"> إنهاء بنجاح </a>
+                                </div>
+                                <div class="form-group col-lg-4 mb-0">
+                                    <a class="waves-effect waves-light btn w-100 d-block btn_green"> إنهاء بمحضر </a>
+                                </div>
+                                <div class="form-group col-lg-4 mb-0">
+                                    <a class="waves-effect waves-light btn w-100 d-block btn_white"> طباعة </a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end content here -->
+    </div>
+    <!-- end wrapper here -->
+    <!-- start footer here -->
+    <footer class="footer footer-bg text-center mt-5">
+        <span class="ml-4"> تم تطويره بواسطة </span>
+        <a class="footer_logo" href="#"><img src="assets/img/logo-uc-light.png"></a>
+        <a class="footer_logo" href="#"><img src="assets/img/logo-unicom-light.svg"></a>
+    </footer>
+
+
+
+
+    <script src="assets/js/jquery-3.4.1.js"></script>
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/materialize.min.js"></script>
+    <script src="assets/js/uikit-icons.min.js"></script>
+    <script src="assets/js/uikit.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+</body>
+
+</html>
