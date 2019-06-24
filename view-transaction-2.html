@@ -115,7 +115,7 @@
                     </div>
                 </div>
                 <div class="row mb-3">
-                    <div class="col-lg-12 col-md-12 pr-0">
+                    <div class="col-lg-12 col-md-12">
                         <div class="collapse_transaction">
                             <ul uk-accordion class="mb-3">
                                 <li class="uk-open text-right">
@@ -257,58 +257,8 @@
                     <div class="col-lg-12">
                         <div class="collapse_transaction mt-0">
                             <div class="row">
-                                <div class="col-lg-4 col-md-5">
-                                    <div class="docment_box">
-                                        <div class="head-area">
-                                            <ul class="nav upload_list">
-                                                <li class="nav-item">
-                                                    <label class="file-input" for="file-input">
-                                                        <i class="material-icons icons"> attach_file</i>
-                                                        إضافة مستند
-                                                    </label>
-                                                    <input id="file-input" class="image-upload" type="file" accept="image/*" />
-                                                </li>
-                                                <li class="nav-item">
-                                                    <button type="button" class="scan_link">
-                                                        <i class="material-icons icons upload">scanner</i>
-                                                        مسح ضوئى
-                                                    </button>
-                                                </li>
-                                            </ul>
-                                            <div class="delete_action">
-                                                <a href="#" class="">
-                                                    <i class="fa fa-times"></i>
-                                                </a>
-                                            </div>
-                                            <div class="preview-pic">
-                                                <img class="prev-pic" src="assets/img/prev-pic.png">
-                                            </div>
-                                        </div>
-                                        <form class="form mt-5">
-                                            <div class="form-group">
-                                                <div class="input-field inputMaterial">
-                                                    <select>
-                                                            <option value="" disabled selected> نوع المستند </option>
-                                                            <option value="1">Option 1</option>
-                                                            <option value="2">Option 2</option>
-                                                            <option value="3">Option 3</option>
-                                                        </select>
-                                                    <label class="select_lable">نوع المستند</label>
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <input class="inputMaterial" id="" type="text" value="" required>
-                                                <label class="label"> وصف المستند </label>
-                                            </div>
-                                            <div class="form-group">
-                                                <button type="submit" class="waves-effect waves-blue btn w-100 d-block login mt-4"> إضافة المواطن </button>
-                                            </div>
-
-                                        </form>
-                                    </div>
-                                </div>
-                                <div class="col-lg-8 col-md-12">
-                                    <ul uk-accordion class="uk_accordion_top">
+                                <div class="col-lg-12 col-md-12">
+                                    <ul uk-accordion>
                                         <li class="uk-open text-right">
                                             <a class="uk-accordion-title" href="#"> المستندات الخاصة بالمعاملة </a>
                                             <span class="numberic">1</span>
@@ -387,20 +337,64 @@
                 </div>
 
                 <div class="row form-actions">
-                    <div class="col-lg-6 col-md-6 offset-3">
-                        <form>
-                            <div class="form-row">
-                                <div class="form-group col-lg-4 mb-0">
-                                    <a class="waves-effect waves-light btn w-100 d-block btn_blue"> إنهاء بنجاح </a>
+                    <div class="container">
+                        <div class="col-lg-12 col-md-12">
+                            <form>
+                                <div class="form-row">
+                                    <div class="form-group col-lg-3 mb-0">
+                                        <input class="inputMaterial" id="" type="text" value="" required>
+                                        <label class="label ">  الرسوم </label>
+                                    </div>
+                                    <div class="form-group col-lg-3 mb-0">
+                                        <input class="inputMaterial" step="1" min="0" max="" value="0" id="add_number" type="number" inputmode="numeric" required>
+                                        <i class="material-icons plus add_number">add</i>
+                                        <i class="material-icons mins add_number">remove</i>
+                                        <label class="label"> عدد نسخ الطباعه </label>
+                                        <p class="text-right font-small font-weight-bold mt-1"> عدد النماذج المراد طباعتها </p>
+                                    </div>
+                                    <div class="form-group col-lg-3 mb-0">
+                                        <p class="bg-light mb-0 text-right"> إجمالي رسوم النسخ المضافة: <span class="pull-left"> 300.00 دع </span> </p>
+                                        <p class="bg-darkgray mb-0 text-right"> إجمالي رسوم النسخ المضافة: <span class="pull-left"> 300.00 دع </span> </p>
+                                    </div>
+                                    <div class="form-group col-lg-3 mb-0">
+                                        <a class="waves-effect waves-light btn w-100 d-block btn_blue" data-toggle="modal" data-target="#model"> تأكيد الدفع </a>
+                                    </div>
                                 </div>
-                                <div class="form-group col-lg-4 mb-0">
-                                    <a class="waves-effect waves-light btn w-100 d-block btn_green"> إنهاء بمحضر </a>
-                                </div>
-                                <div class="form-group col-lg-4 mb-0">
-                                    <a class="waves-effect waves-light btn w-100 d-block btn_white"> طباعة </a>
-                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="model" tabindex="-1" role="dialog" aria-labelledby="model" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content p-0">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalCenterTitle"> تم تحصيل رسوم المعاملة </h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
                             </div>
-                        </form>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-group">
+                                        <input class="inputMaterial" id="" type="text" value="" required>
+                                        <label class="label"> التصرفات التجارية </label>
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="inputMaterial" id="" type="text" value="" required>
+                                        <label class="label"> التصرفات التجارية </label>
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="inputMaterial" id="" type="text" value="" required>
+                                        <label class="label"> التصرفات التجارية </label>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="waves-effect waves-light btn btn-white" data-dismiss="modal"> الغاء </button>
+                                <button type="button" class="waves-effect waves-light btn btn-blue"> حفظ </button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -1081,8 +1081,12 @@
         background-color: rgba(255, 255, 255, 1);
         border-bottom-right-radius: 8px;
         box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.35);
-        min-height: 272px;
         border-bottom-left-radius: 8px;
+    }
+    
+    .collapse_transaction .content-scroll {
+        overflow: auto;
+        height: 272px;
     }
     
     .collapse_transaction .uk-open>.uk-accordion-title::before {
@@ -1720,4 +1724,120 @@
     
     .uk_accordion_top {
         margin-top: 70px;
+    }
+    
+    .form-actions p {
+        padding: 3px 5px;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    
+    .bg-darkgray {
+        background: rgba(214, 214, 214, 1);
+    }
+    
+    .bg-light {
+        background: rgba(239, 239, 239, 1);
+    }
+    
+    .modal-header {
+        background: rgba(1, 84, 149, 1);
+        color: #fff;
+        border-radius: 0;
+    }
+    
+    .modal-header .close {
+        padding: 0;
+        margin: 0;
+        text-align: left;
+        display: block;
+        position: absolute;
+        left: 18px;
+        top: 10px;
+        font-size: 33px;
+        color: white;
+        opacity: 1;
+    }
+    
+    .modal-header .modal-title {
+        font-size: 15px;
+        min-height: 25px;
+    }
+    
+    .form_box .modal-footer button {}
+    
+    .modal .modal-footer .btn {
+        margin: 5px;
+        width: 50%;
+    }
+    
+    .modal {
+        box-shadow: none;
+    }
+    
+    .btn-white {
+        background: #fff;
+        border: 1px solid rgba(1, 84, 149, 1);
+        color: rgba(1, 84, 149, 1);
+        box-shadow: none;
+    }
+    
+    .btn-white:hover {
+        background: #fff;
+        box-shadow: none;
+    }
+    
+    .btn-blue {
+        background: rgba(1, 84, 149, 1);
+        color: #fff;
+    }
+    
+    .btn-blue:hover {
+        background: rgba(1, 84, 149, 1);
+        box-shadow: none;
+    }
+    
+    .delete_action {
+        position: absolute;
+        top: 0;
+        right: -25px;
+        display: none;
+        transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+    }
+    
+    .delete_action a {
+        font-size: 25px;
+        color: red
+    }
+    /* .upload_list:hover~.delete_action {
+        display: block;
+    } */
+    
+    .prevldg td,
+    .prevldg th {
+        text-align: center;
+        vertical-align: middle;
+        font-size: 12px;
+    }
+    
+    .prevldg thead th {
+        vertical-align: middle;
+        border-bottom: 2px solid #dee2e6;
+        font-size: 11px;
+        font-weight: 100;
+    }
+    
+    .check_postion {
+        position: relative;
+        right: -6px;
+    }
+    
+    .request-machine {
+        box-shadow: 0 0px 1px 0px rgba(0, 0, 0, 0.31);
+        margin-top: 1px;
+        padding: 20px 0;
     }

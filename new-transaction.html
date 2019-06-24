@@ -193,7 +193,7 @@
                                 <li class="uk-open text-right">
                                     <a class="uk-accordion-title" href="#"> بيانات الوكلاء </a>
                                     <span class="numberic">2</span>
-                                    <div class="uk-accordion-content p-0">
+                                    <div class="uk-accordion-content content-scroll p-0" id="scroll">
                                         <table class="table table-striped">
                                             <thead class="thead-dark">
                                                 <tr>
@@ -207,7 +207,7 @@
                                                     <th> عنوان المواطن </th>
                                                 </tr>
                                             </thead>
-                                            <tbody>
+                                            <tbody class="content-scroll">
                                                 <tr class="rows">
                                                     <td>
                                                         <span class="image_user mr-2">
@@ -233,6 +233,48 @@
                                                         <span class="image_user mr-2">
                                                             <img src="assets/img/person-placeholder.png" title="" alt="">
                                                         </span>
+                                                        <div class="actions">
+                                                            <a href="#"><i class="material-icons">edit</i></a>
+                                                            <a href="#"><i class="material-icons">delete_forever</i></a>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <span><img src="" title="" alt=""></span>
+                                                        <span> جواز السفر </span>
+                                                    </td>
+                                                    <td>12345678901234</td>
+                                                    <td>18/01/2019</td>
+                                                    <td>بغداد</td>
+                                                    <td>ياسر مصطفى لطفي</td>
+                                                    <td>مصري</td>
+                                                    <td>مدينة الموصل - الموصل</td>
+                                                </tr>
+                                                <tr class="rows">
+                                                    <td>
+                                                        <span class="image_user mr-2">
+                                                                <img src="assets/img/person-placeholder.png" title="" alt="">
+                                                            </span>
+                                                        <div class="actions">
+                                                            <a href="#"><i class="material-icons">edit</i></a>
+                                                            <a href="#"><i class="material-icons">delete_forever</i></a>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <span><img src="" title="" alt=""></span>
+                                                        <span> جواز السفر </span>
+                                                    </td>
+                                                    <td>12345678901234</td>
+                                                    <td>18/01/2019</td>
+                                                    <td>بغداد</td>
+                                                    <td>ياسر مصطفى لطفي</td>
+                                                    <td>مصري</td>
+                                                    <td>مدينة الموصل - الموصل</td>
+                                                </tr>
+                                                <tr class="rows">
+                                                    <td>
+                                                        <span class="image_user mr-2">
+                                                                <img src="assets/img/person-placeholder.png" title="" alt="">
+                                                            </span>
                                                         <div class="actions">
                                                             <a href="#"><i class="material-icons">edit</i></a>
                                                             <a href="#"><i class="material-icons">delete_forever</i></a>
@@ -663,6 +705,89 @@
                                                     </div>
                                                 </div>
                                             </div>
+                                            <div class="request-machine">
+                                                <div class="row no-margin">
+                                                    <div class="col-lg-3">
+                                                        <div class="list_group">
+                                                            <div class="form-group">
+                                                                <input class="inputMaterial" id="" type="text" value="" required>
+                                                                <label class="label"> الغرض </label>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <input class="inputMaterial" id="" type="text" value="" required>
+                                                                <label class="label"> أية معلومات أخرى </label>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <input class="inputMaterial" id="" type="text" value="" required>
+                                                                <label class="label"> بدل الشراء  </label>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <input class="inputMaterial" id="" type="text" value="" required>
+                                                                <label class="label"> القيمة المقدرة </label>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <input class="inputMaterial" id="" type="text" value="" required>
+                                                                <label class="label "> التصرفات التجارية </label>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <button type="submit" class="waves-effect waves-blue btn w-100 d-block login mt-4"> إضافة طلب تسجيل ماكنة </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-9">
+                                                        <div class="collapse_transaction mt-0">
+                                                            <ul uk-accordion>
+                                                                <li class="uk-open text-right">
+                                                                    <a class="uk-accordion-title" href="#"> طلبات تسجيل ماكنة </a>
+                                                                    <div class="uk-accordion-content p-0">
+                                                                        <table class="table table-striped">
+                                                                            <thead class="thead-dark">
+                                                                                <tr>
+                                                                                    <th>نوع الماكنة</th>
+                                                                                    <th> أوصاف الماكنة </th>
+                                                                                    <th> منشأ الماكنة </th>
+                                                                                    <th> بدل الشراء </th>
+                                                                                    <th> القيمة المقدرة </th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <tr class="rows">
+                                                                                    <td>
+                                                                                        <div class="actions">
+                                                                                            <a href="#"><i class="material-icons">visibility</i></a>
+                                                                                            <a href="#"><i class="material-icons">delete_forever</i></a>
+                                                                                        </div>
+                                                                                        جواز السفر
+                                                                                    </td>
+                                                                                    <td> جواز السفر </td>
+                                                                                    <td>12345678901234</td>
+                                                                                    <td>12345678901234</td>
+                                                                                    <td>12345678901234</td>
+
+                                                                                </tr>
+                                                                                <tr class="rows">
+                                                                                    <td>
+                                                                                        <div class="actions">
+                                                                                            <a href="#"><i class="material-icons">visibility</i></a>
+                                                                                            <a href="#"><i class="material-icons">delete_forever</i></a>
+                                                                                        </div>
+                                                                                        جواز السفر
+                                                                                    </td>
+                                                                                    <td> جواز السفر </td>
+                                                                                    <td>12345678901234</td>
+                                                                                    <td>12345678901234</td>
+                                                                                    <td>12345678901234</td>
+
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </form>
                                     </div>
                                 </li>
@@ -716,6 +841,8 @@
     <script src="assets/js/uikit-icons.min.js"></script>
     <script src="assets/js/uikit.min.js"></script>
     <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/nicescroll.js"></script>
+    <script src="assets/js/scroll.js"></script>
     <script src="assets/js/custom.js"></script>
 </body>
 

@@ -61,16 +61,15 @@ $(document).ready(function() {
                 $('.prev-pic').attr('src', e.target.result);
             }
             reader.readAsDataURL(input.files[0]);
-            $(".upload-button_img").hide();
-            $(".edit_button_img").show();
+            $(".delete_action").show();
+            $(".preview-pic").css("z-index", "1");
         }
     }
+
     $("#file-input").on('change', function() {
         readURL2(this);
     });
-    $(".edit_button_img").on('click', function() {
-        $("#file-input").click();
-    });
+
 
     // add one step numberic
     $(".add_number").on("click", function() {
